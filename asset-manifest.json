@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/guess-the-phrase-game/static/css/main.923c648b.css",
+    "main.js": "/guess-the-phrase-game/static/js/main.8c9cc8cd.js",
+    "static/media/starry-night-bg-8.jpg": "/guess-the-phrase-game/static/media/starry-night-bg-8.7def4ed346ab4c699d68.jpg",
+    "static/media/starry-night-bg-11.jpg": "/guess-the-phrase-game/static/media/starry-night-bg-11.52e5d9910d13b3a7cd09.jpg",
+    "index.html": "/guess-the-phrase-game/index.html",
+    "main.923c648b.css.map": "/guess-the-phrase-game/static/css/main.923c648b.css.map",
+    "main.8c9cc8cd.js.map": "/guess-the-phrase-game/static/js/main.8c9cc8cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.923c648b.css",
+    "static/js/main.8c9cc8cd.js"
+  ]
+}
