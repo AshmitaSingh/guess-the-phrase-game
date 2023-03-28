@@ -56,14 +56,23 @@ function Keyboard({
         setBoxValue(newBoxVal);
       }
     });
-  },[]);
+  }, []);
 
+  useEffect(() => {
+    if(arrOfRandomPhrase.toString() === newBoxVal.toString()){
+      setIsGameWon(true);
+    }
+  }, [newBoxVal])
+
+  // console.log(arrOfRandomPhrase.toString() === newBoxVal.toString());
+  // console.log(arrOfRandomPhrase.toString());
+  // console.log(newBoxVal.toString());
   // console.log(arrOfRandomPhrase);
   // console.log(newBoxVal);
 
   return (
     <div className="content">
-      <img src={bg} className="zoom" alt='bg'/>
+      <img src={bg} className="zoom" alt="bg" />
       <div className="main-container">
         <h1 className="header">GUESS THE PHRASE</h1>
         <div>
@@ -84,7 +93,6 @@ function Keyboard({
               <GameWon />
             </div>
           ) : (
-            // setIsGameWon(false)
             ''
           )}
         </div>

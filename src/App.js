@@ -16,13 +16,9 @@ function App() {
   const [randomNumber, setRandomNumber] = useState(
     Math.floor(Math.random() * sentences.length)
   );
-  const arrOfRandomPhrase = sentences[randomNumber].toUpperCase().split(""); //randomPhrase.split(' ').join('').split('')
+  const arrOfRandomPhrase = sentences[randomNumber].toUpperCase().split(""); 
   const [remainingLives, setRemainingLives] = useState(5);
   const [lostLives, setLostLives] = useState(0);
-  // const [boxValue, setBoxValue] = useState(
-  //   Array(arrOfRandomPhrase.length).fill(null)
-  // );
-  // const newBoxVal = boxValue.slice();
 
   return (
     <div className="App">
@@ -42,8 +38,3 @@ function App() {
 }
 
 export default App;
-
-
-// 1. Game Won logic
-// 2. Blocking keypress so that it disables the button when it is clicked once -- completed 
-// 3. Make Red color alphabet when wrong letter is clicked -- half done!!
