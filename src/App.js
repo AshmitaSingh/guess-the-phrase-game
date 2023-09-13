@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import GameOver from "./components/GameOver";
 import Keyboard from "./components/Keyboard";
-import './styles/PopUp.css';
+import "./styles/PopUp.css";
 
 function App() {
   const sentences = [
@@ -16,14 +16,17 @@ function App() {
   const [randomNumber, setRandomNumber] = useState(
     Math.floor(Math.random() * sentences.length)
   );
-  const arrOfRandomPhrase = sentences[randomNumber].toUpperCase().split(""); 
+  //An array containing characters of the randomly selected phrase.
+  const arrOfRandomPhrase = sentences[randomNumber].toUpperCase().split("");
+
+  //When remainingLives = 0, game over!!!
   const [remainingLives, setRemainingLives] = useState(5);
   const [lostLives, setLostLives] = useState(0);
 
   return (
     <div className="App">
       {remainingLives === 0 && lostLives === 5 ? (
-          <GameOver />
+        <GameOver />
       ) : (
         <Keyboard
           arrOfRandomPhrase={arrOfRandomPhrase}

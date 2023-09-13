@@ -3,7 +3,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import HeartBrokenIcon from "@mui/icons-material/HeartBroken";
 import "../styles/Keyboard.css";
 import GameWon from "./GameWon";
-import bg from "../assets/starry-night-bg-11.jpg";
+import bg from "../assets/flat-mountains.svg";
 import { v4 as uuid } from "uuid";
 
 function Keyboard({
@@ -19,8 +19,7 @@ function Keyboard({
     ["z", "x", "c", "v", "b", "n", "m"],
   ];
 
-  //Keep a track on the live - if clicked alphabet is not equal to the required alphabet, break lives
-  //When remainingLives = 0, game over!!!
+  //Keep a track on the lives - if clicked alphabet is not equal to the required alphabet, break lives
   const [wrongAlphabet, setWrongAlphabet] = useState("");
   const [wrongAlphabetClicked, setWrongAlphabetClicked] = useState(false);
 
@@ -30,11 +29,12 @@ function Keyboard({
   const [isGameWon, setIsGameWon] = useState(false);
   const newBoxVal = boxValue.slice();
 
+  //Function to handle keyboard clicks and update the game state.
   const handleKeyStroke = (e) => {
     // To disable the button on click
     e.currentTarget.disabled = true;
     let clickedAlphabet = e.target.innerText;
-    arrOfRandomPhrase.map((ele, i) => {
+    arrOfRandomPhrase.forEach((ele, i) => {
       if (clickedAlphabet === ele) {
         newBoxVal[i] = clickedAlphabet;
         setBoxValue(newBoxVal);
@@ -50,7 +50,7 @@ function Keyboard({
   };
 
   useEffect(() => {
-    arrOfRandomPhrase.map((ele, i) => {
+    arrOfRandomPhrase.forEach((ele, i) => {
       if (arrOfRandomPhrase[i] === " ") {
         newBoxVal[i] = " ";
         setBoxValue(newBoxVal);
@@ -59,16 +59,10 @@ function Keyboard({
   }, []);
 
   useEffect(() => {
-    if(arrOfRandomPhrase.toString() === newBoxVal.toString()){
+    if (arrOfRandomPhrase.toString() === newBoxVal.toString()) {
       setIsGameWon(true);
     }
-  }, [newBoxVal])
-
-  // console.log(arrOfRandomPhrase.toString() === newBoxVal.toString());
-  // console.log(arrOfRandomPhrase.toString());
-  // console.log(newBoxVal.toString());
-  // console.log(arrOfRandomPhrase);
-  // console.log(newBoxVal);
+  }, [newBoxVal]);
 
   return (
     <div className="content">
@@ -93,7 +87,7 @@ function Keyboard({
               <GameWon />
             </div>
           ) : (
-            ''
+            ""
           )}
         </div>
         <div className="keyboard">
