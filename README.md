@@ -5,9 +5,9 @@ Welcome to the "**Guess the Phrase**" game! This React application allows you to
 ## Screenshots
 
 ![Alt text](/src/assets/guess-the-phrase.PNG "Starting Screen")
-![Alt text](/src/assets/game-won.PNG.PNG "Game Won Screen")
-![Alt text](/src/assets/lives-lost.PNG.PNG "Lives Lost Screen")
-![Alt text](/src/assets/game-over.PNG.PNG "Game Over Screen")
+![Alt text](/src/assets/game-won.PNG "Game Won Screen")
+![Alt text](/src/assets/lives-lost.PNG "Lives Lost Screen")
+![Alt text](/src/assets/game-over.PNG "Game Over Screen")
 
 ## Features
 
