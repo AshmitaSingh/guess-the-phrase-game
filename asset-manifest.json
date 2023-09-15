@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/guess-the-phrase-game/static/css/main.923c648b.css",
-    "main.js": "/guess-the-phrase-game/static/js/main.8c9cc8cd.js",
-    "static/media/starry-night-bg-8.jpg": "/guess-the-phrase-game/static/media/starry-night-bg-8.7def4ed346ab4c699d68.jpg",
-    "static/media/starry-night-bg-11.jpg": "/guess-the-phrase-game/static/media/starry-night-bg-11.52e5d9910d13b3a7cd09.jpg",
+    "main.css": "/guess-the-phrase-game/static/css/main.efd03633.css",
+    "main.js": "/guess-the-phrase-game/static/js/main.e476db2c.js",
+    "static/media/skull.png": "/guess-the-phrase-game/static/media/skull.33ae4161ee1c32515fd9.png",
+    "static/media/lose.png": "/guess-the-phrase-game/static/media/lose.e66047ba5e58791af604.png",
+    "static/media/flat-mountains.svg": "/guess-the-phrase-game/static/media/flat-mountains.f98e5d3ddc29fc77e2854aa1ebba2211.svg",
     "index.html": "/guess-the-phrase-game/index.html",
-    "main.923c648b.css.map": "/guess-the-phrase-game/static/css/main.923c648b.css.map",
-    "main.8c9cc8cd.js.map": "/guess-the-phrase-game/static/js/main.8c9cc8cd.js.map"
+    "main.efd03633.css.map": "/guess-the-phrase-game/static/css/main.efd03633.css.map",
+    "main.e476db2c.js.map": "/guess-the-phrase-game/static/js/main.e476db2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.923c648b.css",
-    "static/js/main.8c9cc8cd.js"
+    "static/css/main.efd03633.css",
+    "static/js/main.e476db2c.js"
   ]
 }
